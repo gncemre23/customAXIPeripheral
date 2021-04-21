@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Wed Apr 21 08:54:27 2021">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="1beca4d7cc5844958e0dc62c186ef920" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="1" type="JavaHandler"/>
+<property name="AutoConnectPort" value="3" type="JavaHandler"/>
+<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="CustomizeRSBBlock" value="2" type="JavaHandler"/>
+<property name="DisconnectRSBPin" value="1" type="JavaHandler"/>
+<property name="EditInIPPackagerHandler" value="1" type="JavaHandler"/>
+<property name="IPPackagerHandler" value="1" type="JavaHandler"/>
+<property name="MakeRSBConnection" value="1" type="JavaHandler"/>
+<property name="ReportIPStatus" value="1" type="JavaHandler"/>
+<property name="ToolsSettings" value="1" type="JavaHandler"/>
+<property name="UpgradeIP" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Handlers">
+<property name="ApplyRSBMultiAutomationDialog_CHECKBOX_TREE" value="7" type="GuiHandlerData"/>
+<property name="BaseDialog_CANCEL" value="2" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="18" type="GuiHandlerData"/>
+<property name="CmdMsgDialog_OK" value="2" type="GuiHandlerData"/>
+<property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="7" type="GuiHandlerData"/>
+<property name="CreateSrcFileDialog_FILE_LOCATION" value="1" type="GuiHandlerData"/>
+<property name="CreateSrcFileDialog_FILE_NAME" value="1" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="7" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="1" type="GuiHandlerData"/>
+<property name="IPStatusSectionPanel_UPGRADE_SELECTED" value="2" type="GuiHandlerData"/>
+<property name="PACommandNames_ADD_SOURCES" value="2" type="GuiHandlerData"/>
+<property name="PACommandNames_AUTO_CONNECT_PORTS" value="3" type="GuiHandlerData"/>
+<property name="PACommandNames_DISCONNECT_RSB_PIN" value="1" type="GuiHandlerData"/>
+<property name="PACommandNames_EDIT_IN_IP_PACKAGER" value="1" type="GuiHandlerData"/>
+<property name="PACommandNames_MAKE_CONNECTION" value="1" type="GuiHandlerData"/>
+<property name="RSBAddModuleDialog_MODULE_LIST" value="1" type="GuiHandlerData"/>
+<property name="RSBApplyAutomationBar_RUN_BLOCK_AUTOMATION" value="2" type="GuiHandlerData"/>
+<property name="RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION" value="2" type="GuiHandlerData"/>
+<property name="RSBSelectPinsDialog_PINS_TREE" value="1" type="GuiHandlerData"/>
+<property name="SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL" value="2" type="GuiHandlerData"/>
+<property name="SrcChooserPanel_CREATE_FILE" value="2" type="GuiHandlerData"/>
+<property name="SystemBuilderMenu_ADD_MODULE" value="1" type="GuiHandlerData"/>
+<property name="SystemBuilderView_ADD_IP" value="5" type="GuiHandlerData"/>
+<property name="SystemBuilderView_EXPAND_COLLAPSE" value="2" type="GuiHandlerData"/>
+<property name="SystemBuilderView_ORIENTATION" value="1" type="GuiHandlerData"/>
+<property name="SystemBuilderView_PINNING" value="7" type="GuiHandlerData"/>
+<property name="SystemTab_REPORT_IP_STATUS" value="2" type="GuiHandlerData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="1" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="0" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

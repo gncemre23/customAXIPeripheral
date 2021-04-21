@@ -68,3 +68,164 @@ export_ip_user_files -of_objects [get_ips design_1_customPeripheral_0_0] -no_scr
 close [ open /home/egoncu/Desktop/github/customAXIPeripheral/hw/stream_generator.vhd w ]
 add_files /home/egoncu/Desktop/github/customAXIPeripheral/hw/stream_generator.vhd
 update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+set_property location {0.5 -88 -68} [get_bd_cells processing_system7_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0
+endgroup
+connect_bd_intf_net [get_bd_intf_pins processing_system7_0/M_AXI_GP0] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/S00_AXI]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {1}] [get_bd_cells axi_interconnect_0]
+endgroup
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M00_AXI] [get_bd_intf_pins customPeripheral_0/S00_AXI]
+connect_bd_net [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins axi_interconnect_0/ACLK]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (102 MHz)" }  [get_bd_pins customPeripheral_0/s00_axi_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (102 MHz)" }  [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]
+endgroup
+connect_bd_net [get_bd_pins customPeripheral_0/s00_axis_aresetn] [get_bd_pins rst_ps7_0_102M/peripheral_aresetn]
+connect_bd_net [get_bd_pins customPeripheral_0/s00_axis_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+startgroup
+make_bd_pins_external  [get_bd_pins customPeripheral_0/gpi]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins customPeripheral_0/gpo]
+endgroup
+create_bd_cell -type module -reference stream_generator stream_generator_0
+startgroup
+make_bd_pins_external  [get_bd_pins stream_generator_0/start]
+endgroup
+startgroup
+connect_bd_net [get_bd_pins stream_generator_0/rst_n] [get_bd_pins rst_ps7_0_102M/peripheral_aresetn]
+endgroup
+connect_bd_net [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins rst_ps7_0_102M/peripheral_aresetn]
+connect_bd_net [get_bd_pins customPeripheral_0/s00_axis_tready] [get_bd_pins stream_generator_0/axi_t_ready]
+connect_bd_net [get_bd_pins stream_generator_0/axi_t_valid] [get_bd_pins customPeripheral_0/s00_axis_tvalid]
+connect_bd_net [get_bd_pins stream_generator_0/axi_t_last] [get_bd_pins customPeripheral_0/s00_axis_tlast]
+connect_bd_net [get_bd_pins stream_generator_0/axi_t_last] [get_bd_pins customPeripheral_0/s00_axis_tdata]
+disconnect_bd_net /stream_generator_0_axi_t_last [get_bd_pins customPeripheral_0/s00_axis_tdata]
+connect_bd_net [get_bd_pins customPeripheral_0/s00_axis_tdata] [get_bd_pins stream_generator_0/axi_t_sdata]
+ipx::edit_ip_in_project -upgrade true -name customPeripheral_v1_0_project -directory /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.tmp/customPeripheral_v1_0_project /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0/component.xml
+update_compile_order -fileset sources_1
+close_project
+write_bd_tcl -force /home/egoncu/Desktop/github/customAXIPeripheral/hw/bd/design_1.tcl
+add_files -norecurse /home/egoncu/Desktop/github/customAXIPeripheral/hw/rtl/stream_generator.vhd
+update_compile_order -fileset sources_1
+connect_bd_net [get_bd_pins stream_generator_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+export_ip_user_files -of_objects  [get_files /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/new/customPeripheral.vhd] -no_script -reset -force -quiet
+remove_files  /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/new/customPeripheral.vhd
+file delete -force /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/new/customPeripheral.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+apply_board_connection -board_interface "sws_8bits" -ip_intf "axi_gpio_0/GPIO" -diagram "design_1" 
+endgroup
+apply_board_connection -board_interface "leds_8bits" -ip_intf "axi_gpio_0/GPIO2" -diagram "design_1" 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+apply_board_connection -board_interface "btns_5bits" -ip_intf "axi_gpio_1/GPIO" -diagram "design_1" 
+endgroup
+startgroup
+set_property -dict [list CONFIG.NUM_MI {3}] [get_bd_cells axi_interconnect_0]
+endgroup
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI] [get_bd_intf_pins axi_gpio_1/S_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M02_AXI] [get_bd_intf_pins axi_gpio_0/S_AXI]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (102 MHz)" }  [get_bd_pins axi_interconnect_0/M01_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (102 MHz)" }  [get_bd_pins axi_interconnect_0/M02_ACLK]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_gpio_1_GPIO]
+delete_bd_objs [get_bd_intf_ports btns_5bits]
+connect_bd_net [get_bd_ports start_0] [get_bd_pins axi_gpio_1/gpio_io_i]
+delete_bd_objs [get_bd_ports start_0]
+delete_bd_objs [get_bd_nets start_0_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0
+endgroup
+set_property location {2.5 776 -508} [get_bd_cells xlslice_0]
+connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_i] [get_bd_pins xlslice_0/Din]
+startgroup
+set_property -dict [list CONFIG.DIN_TO {1} CONFIG.DIN_WIDTH {5} CONFIG.DOUT_WIDTH {1} CONFIG.DIN_TO {1} CONFIG.DIN_FROM {1}] [get_bd_cells xlslice_0]
+endgroup
+connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins stream_generator_0/start]
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO]
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO2]
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {4} CONFIG.C_GPIO2_WIDTH {4} CONFIG.C_ALL_INPUTS {0} CONFIG.GPIO_BOARD_INTERFACE {Custom} CONFIG.GPIO2_BOARD_INTERFACE {Custom} CONFIG.C_ALL_OUTPUTS_2 {0}] [get_bd_cells axi_gpio_0]
+endgroup
+set_property name sws_4bits [get_bd_intf_ports sws_8bits]
+set_property name leds_4bits [get_bd_intf_ports leds_8bits]
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_ALL_INPUTS {0} CONFIG.GPIO_BOARD_INTERFACE {Custom}] [get_bd_cells axi_gpio_1]
+endgroup
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (102 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (102 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (102 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (102 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_1/S_AXI} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins axi_gpio_1/S_AXI]
+endgroup
+save_bd_design
+delete_bd_objs [get_bd_nets start_0_1]
+delete_bd_objs [get_bd_ports start_0]
+create_peripheral user.org user gpioIP 1.0 -dir /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core user.org:user:gpioIP:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core user.org:user:gpioIP:1.0]
+write_peripheral [ipx::find_open_core user.org:user:gpioIP:1.0]
+set_property  ip_repo_paths  {/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0 /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0} [current_project]
+update_ip_catalog -rebuild
+open_bd_design {/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:gpioIP:1.0 gpioIP_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.NUM_MI {4}] [get_bd_cells axi_interconnect_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (102 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (102 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/gpioIP_0/S00_AXI} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins gpioIP_0/S00_AXI]
+ipx::edit_ip_in_project -upgrade true -name gpioIP_v1_0_project -directory /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.tmp/gpioIP_v1_0_project /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0
+upgrade_ip -vlnv user.org:user:customPeripheral:1.0 [get_ips  design_1_customPeripheral_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_customPeripheral_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {design_1_gpioIP_0_0 design_1_stream_generator_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {design_1_gpioIP_0_0 design_1_stream_generator_0_0}] -no_script -sync -force -quiet
+connect_bd_net [get_bd_pins gpioIP_0/leds] [get_bd_pins customPeripheral_0/gpo]
+delete_bd_objs [get_bd_ports gpo_0]
+delete_bd_objs [get_bd_nets gpi_0_1] [get_bd_ports gpi_0]
+connect_bd_net [get_bd_pins gpioIP_0/btn] [get_bd_pins stream_generator_0/start]
+connect_bd_net [get_bd_pins customPeripheral_0/gpi] [get_bd_pins gpioIP_0/switches]
+save_bd_design
+write_bd_tcl -force /home/egoncu/Desktop/github/customAXIPeripheral/hw/bd/zedboard_bd.tcl

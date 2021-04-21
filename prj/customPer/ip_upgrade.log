@@ -1,6 +1,84 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Wed Apr 21 09:34:20 2021
+| Host         : egoncu-Lenovo-IdeaPad-L340-15API running 64-bit Ubuntu 20.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_stream_generator_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_stream_generator_0_0 (xilinx.com:module_ref:stream_generator:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Wed Apr 21 09:34:20 2021
+| Host         : egoncu-Lenovo-IdeaPad-L340-15API running 64-bit Ubuntu 20.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_gpioIP_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_gpioIP_0_0 (user.org:user:gpioIP:1.0) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_gpioIP_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'btn'
+
+-Upgrade has added port 'leds'
+
+-Upgrade has added port 'switches'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Wed Apr 21 09:33:51 2021
+| Host         : egoncu-Lenovo-IdeaPad-L340-15API running 64-bit Ubuntu 20.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_customPeripheral_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_customPeripheral_0_0 (user.org:user:customPeripheral:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
 | Date         : Wed Apr 21 01:22:34 2021
 | Host         : egoncu-Lenovo-IdeaPad-L340-15API running 64-bit Ubuntu 20.04.1 LTS
 | Command      : upgrade_ip

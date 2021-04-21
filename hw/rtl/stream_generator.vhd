@@ -30,6 +30,8 @@ type state_type is (INIT, BURST, LAST);
 signal state_next, state_reg : state_type;
 begin
 
+axi_t_sdata <= std_logic_vector(count_reg);
+
 process(clk)
 begin
     if(rising_edge(clk)) then
