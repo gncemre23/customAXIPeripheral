@@ -26,26 +26,34 @@ architecture Behavioral of stream_generator is
 
 signal count_next, count_reg   : unsigned(10 downto 0);
 
+signal posedge_start : std_logic;
+
 type state_type is (INIT, BURST, LAST);
 signal state_next, state_reg : state_type;
+signal start_next, start_new, start_old : std_logic;
 begin
 
 axi_t_sdata <= std_logic_vector(count_reg);
+
+posedge_start <= start_new and (not start_old);
 
 process(clk)
 begin
     if(rising_edge(clk)) then
         state_reg <= state_next after 1 ns;
         count_reg <= count_next after 1 ns;
+        start_new <= start_next after 1 ns;
+        start_old <= start_new after 1 ns;
     end if;
 end process;
 
-process(start, state_reg, axi_t_ready, rst_n)
+process(posedge_start, state_reg, axi_t_ready, rst_n, count_reg)
 begin
-    --default
+    --default assingments
     axi_t_valid <= '0';
     count_next <= count_reg;
     state_next <= state_reg;
+    start_next <= start;
     if(rst_n = '0') then
         state_next <= INIT;
         count_next <= (others => '0');
@@ -53,7 +61,7 @@ begin
         case state_reg is
             when INIT => 
                 count_next <= (others => '0');
-                if(start = '1') then
+                if(posedge_start = '1') then
                     state_next <= BURST;
                 end if;
             when BURST =>

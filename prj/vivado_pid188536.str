@@ -2781,3 +2781,87 @@ selectButton(RDIResource.BaseDialog_OK, "OK"); // a (by)
 dismissDialog("Export Block Design"); // by (cl)
 // Tcl Message: write_bd_tcl -force /home/egoncu/Desktop/github/customAXIPeripheral/hw/bd/zedboard_bd.tcl 
 // Tcl Message: INFO: [BD 5-148] Tcl file written out </home/egoncu/Desktop/github/customAXIPeripheral/hw/bd/zedboard_bd.tcl>.  
+// Elapsed time: 276 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 484, 256, 971, 531, false, false, false, true, false); // gl (k, cl) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ae (an, cl)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stream_generator(Behavioral) (stream_generator.vhd)]", 11, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stream_generator(Behavioral) (stream_generator.vhd)]", 11, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("stream_generator.vhd (2)", 309, 88); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd (2)", 318, 124); // cl (w, cl)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("stream_generator.vhd (2)", 336, 109); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 45 seconds
+selectCodeEditor("stream_generator.vhd (2)", 119, 83); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd (2)", 117, 98); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("stream_generator.vhd (2)", 199, 50); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 181 MB. Current time: 4/21/21, 9:43:32 AM EET
+// Elapsed time: 13 seconds
+selectCodeEditor("stream_generator.vhd (2)", 186, 282); // cl (w, cl)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("stream_generator.vhd (2)", 219, 279); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 34 seconds
+selectCodeEditor("stream_generator.vhd (2)", 127, 173); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd (2)", 65, 29); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 37 seconds
+selectCodeEditor("stream_generator.vhd (2)", 228, 72); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd (2)", 328, 45); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd (2)", 343, 39); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,733 MB. GUI used memory: 180 MB. Current time: 4/21/21, 9:45:08 AM EET
+selectCodeEditor("stream_generator.vhd (2)", 423, 224); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd (2)", 58, 376); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd (2)", 58, 376, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "stream_generator.vhd (2)", 'c'); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd (2)", 111, 248); // cl (w, cl)
+typeControlKey((HResource) null, "stream_generator.vhd (2)", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("stream_generator.vhd (2)", 208, 305); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd (2)", 208, 305); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,749 MB. GUI used memory: 180 MB. Current time: 4/21/21, 9:45:27 AM EET
+selectCodeEditor("stream_generator.vhd (2)", 208, 305); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd (2)", 160, 280); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd (2)", 160, 280, false, false, false, false, true); // cl (w, cl) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("stream_generator.vhd (2)", 155, 273); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd (2)", 155, 273, false, false, false, false, true); // cl (w, cl) - Double Click
+// [Engine Memory]: 2,773 MB (+4477kb) [10:57:09]
+typeControlKey((HResource) null, "stream_generator.vhd (2)", 'c'); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd (2)", 78, 66); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd (2)", 78, 66, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "stream_generator.vhd (2)", 'v'); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd (2)", 363, 65); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+selectCodeEditor("stream_generator.vhd (2)", 119, 51); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd (2)", 237, 60); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,805 MB. GUI used memory: 180 MB. Current time: 4/21/21, 9:46:32 AM EET
