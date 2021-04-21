@@ -1310,3 +1310,217 @@ dismissDialog("Define Module"); // I (cl)
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: FILE_SET_CHANGE
 // Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,355 MB. GUI used memory: 107 MB. Current time: 4/21/21, 1:52:15 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,355 MB. GUI used memory: 106 MB. Current time: 4/21/21, 2:22:15 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,355 MB. GUI used memory: 105 MB. Current time: 4/21/21, 2:52:15 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,355 MB. GUI used memory: 105 MB. Current time: 4/21/21, 3:22:15 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,355 MB. GUI used memory: 105 MB. Current time: 4/21/21, 3:52:16 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,355 MB. GUI used memory: 105 MB. Current time: 4/21/21, 4:22:16 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,355 MB. GUI used memory: 105 MB. Current time: 4/21/21, 4:52:16 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,355 MB. GUI used memory: 105 MB. Current time: 4/21/21, 5:22:16 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,355 MB. GUI used memory: 105 MB. Current time: 4/21/21, 5:52:16 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,355 MB. GUI used memory: 105 MB. Current time: 4/21/21, 6:22:16 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,355 MB. GUI used memory: 105 MB. Current time: 4/21/21, 6:52:16 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,355 MB. GUI used memory: 105 MB. Current time: 4/21/21, 7:22:17 AM EET
+// Elapsed time: 21608 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stream_generator(Behavioral) (stream_generator.vhd)]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stream_generator(Behavioral) (stream_generator.vhd)]", 3, false, false, false, false, false, true); // B (F, cl) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,360 MB. GUI used memory: 107 MB. Current time: 4/21/21, 7:52:17 AM EET
+// Elapsed time: 2021 seconds
+selectCodeEditor("stream_generator.vhd", 29, 62); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 49, 23); // cl (w, cl)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (aH, cl)
+// Elapsed time: 145 seconds
+selectCodeEditor("stream_generator.vhd", 201, 345); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 195, 341); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("stream_generator.vhd", 82, 350); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 134, 378); // cl (w, cl)
+// Elapsed time: 28 seconds
+selectCodeEditor("stream_generator.vhd", 225, 248); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 148, 294); // cl (w, cl)
+// Elapsed time: 120 seconds
+selectCodeEditor("stream_generator.vhd", 10, 346); // cl (w, cl)
+// Elapsed time: 27 seconds
+selectCodeEditor("stream_generator.vhd", 332, 394); // cl (w, cl)
+// Elapsed time: 171 seconds
+selectCodeEditor("stream_generator.vhd", 47, 382); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 278, 356); // cl (w, cl)
+// Elapsed time: 198 seconds
+selectCodeEditor("stream_generator.vhd", 105, 359); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 363, 366); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 13, 306); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 281, 284); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("stream_generator.vhd", 51, 381); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("stream_generator.vhd", 10, 409); // cl (w, cl)
+// Elapsed time: 55 seconds
+selectCodeEditor("stream_generator.vhd", 170, 412); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 4, 412); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 256, 415); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 60, 412); // cl (w, cl)
+// Elapsed time: 23 seconds
+selectCodeEditor("stream_generator.vhd", 4, 365); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("stream_generator.vhd", 45, 366); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectCodeEditor("stream_generator.vhd", 1, 3); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("stream_generator.vhd", 26, 379); // cl (w, cl)
+// Elapsed time: 51 seconds
+selectCodeEditor("stream_generator.vhd", 19, 397); // cl (w, cl)
+// Elapsed time: 156 seconds
+selectCodeEditor("stream_generator.vhd", 191, 410); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 57, 396); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 234, 368); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("stream_generator.vhd", 93, 204); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 6, 202); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 42, 205); // cl (w, cl)
+typeControlKey((HResource) null, "stream_generator.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 219, 336); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 219, 336, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "stream_generator.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 269, 338); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 77, 367); // cl (w, cl)
+// Elapsed time: 22 seconds
+selectCodeEditor("stream_generator.vhd", 32, 384); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 27, 384); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 170, 387); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 28, 384); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 238, 390); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 223, 388); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 200, 381); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("stream_generator.vhd", 90, 415); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("stream_generator.vhd", 108, 370); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 55, 287); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 83, 86); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 83, 86, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("stream_generator.vhd", 46, 259); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 81, 72); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 81, 72, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "stream_generator.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 39, 262); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 39, 262, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "stream_generator.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("stream_generator.vhd", 275, 257); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("stream_generator.vhd", 220, 370); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 195, 336); // cl (w, cl)
+// Elapsed time: 21 seconds
+selectCodeEditor("stream_generator.vhd", 63, 222); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("stream_generator.vhd", 190, 344); // cl (w, cl)
+// Elapsed time: 63 seconds
+selectCodeEditor("stream_generator.vhd", 87, 144); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("stream_generator.vhd", 333, 192); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("stream_generator.vhd", 152, 340); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 394, 340); // cl (w, cl)
+// Elapsed time: 25 seconds
+selectCodeEditor("stream_generator.vhd", 341, 383); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("stream_generator.vhd", 310, 155); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("stream_generator.vhd", 343, 337); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 390, 439); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 390, 439); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 390, 439); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 392, 338); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,473 MB. GUI used memory: 107 MB. Current time: 4/21/21, 8:22:17 AM EET
+// Elapsed time: 108 seconds
+selectCodeEditor("stream_generator.vhd", 87, 268); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("stream_generator.vhd", 316, 350); // cl (w, cl)
+// Elapsed time: 45 seconds
+selectCodeEditor("stream_generator.vhd", 136, 368); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectCodeEditor("stream_generator.vhd", 211, 339); // cl (w, cl)
+// Elapsed time: 36 seconds
+selectCodeEditor("stream_generator.vhd", 337, 339); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("stream_generator.vhd", 308, 310); // cl (w, cl)
+// Elapsed time: 20 seconds
+selectCodeEditor("stream_generator.vhd", 136, 320); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 128, 330); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 128, 321); // cl (w, cl)
+// Elapsed time: 346 seconds
+selectCodeEditor("stream_generator.vhd", 221, 316); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 121, 357); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 121, 357, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 23 seconds
+selectCodeEditor("stream_generator.vhd", 206, 311); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 99, 112); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 99, 112, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "stream_generator.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 122, 280); // cl (w, cl)
+typeControlKey((HResource) null, "stream_generator.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 246, 276); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 179, 266); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 79, 79); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 79, 79, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "stream_generator.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 138, 327); // cl (w, cl)
+typeControlKey((HResource) null, "stream_generator.vhd", 'v'); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("stream_generator.vhd", 260, 368); // cl (w, cl)
+// Elapsed time: 47 seconds
+selectCodeEditor("stream_generator.vhd", 169, 353); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 267, 323); // cl (w, cl)
+typeControlKey((HResource) null, "stream_generator.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 239, 348); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 283, 354); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 123, 376); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 158, 370); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 110, 372); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 144, 387); // cl (w, cl)
+// Elapsed time: 35 seconds
+selectCodeEditor("stream_generator.vhd", 197, 313); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 112, 323); // cl (w, cl)
+typeControlKey((HResource) null, "stream_generator.vhd", 'c'); // cl (w, cl)
+selectCodeEditor("stream_generator.vhd", 186, 321); // cl (w, cl)
+typeControlKey((HResource) null, "stream_generator.vhd", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 55 seconds
+selectCodeEditor("stream_generator.vhd", 29, 148); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectCodeEditor("stream_generator.vhd", 225, 182); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("stream_generator.vhd", 210, 187); // cl (w, cl)
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("stream_generator.vhd", 255, 220); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("stream_generator.vhd", 241, 218); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("stream_generator.vhd", 269, 326); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
