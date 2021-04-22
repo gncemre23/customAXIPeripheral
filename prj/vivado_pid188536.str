@@ -2865,3 +2865,260 @@ selectCodeEditor("stream_generator.vhd (2)", 237, 60); // cl (w, cl)
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: FILE_SET_CHANGE
 // HMemoryUtils.trashcanNow. Engine heap size: 2,805 MB. GUI used memory: 180 MB. Current time: 4/21/21, 9:46:32 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,804 MB. GUI used memory: 180 MB. Current time: 4/21/21, 7:16:06 PM EET
+// WARNING: HEventQueue.dispatchEvent() is taking  1021 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,793 MB. GUI used memory: 177 MB. Current time: 4/21/21, 7:46:05 PM EET
+// WARNING: HEventQueue.dispatchEvent() is taking  1841 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,791 MB. GUI used memory: 177 MB. Current time: 4/21/21, 8:16:07 PM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,791 MB. GUI used memory: 177 MB. Current time: 4/21/21, 8:46:07 PM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,791 MB. GUI used memory: 177 MB. Current time: 4/21/21, 9:16:07 PM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,791 MB. GUI used memory: 177 MB. Current time: 4/21/21, 9:46:08 PM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,791 MB. GUI used memory: 177 MB. Current time: 4/21/21, 10:16:08 PM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,791 MB. GUI used memory: 177 MB. Current time: 4/21/21, 10:46:08 PM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,791 MB. GUI used memory: 177 MB. Current time: 4/21/21, 11:16:08 PM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,791 MB. GUI used memory: 177 MB. Current time: 4/21/21, 11:46:08 PM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,791 MB. GUI used memory: 177 MB. Current time: 4/22/21, 12:16:08 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,791 MB. GUI used memory: 177 MB. Current time: 4/22/21, 12:46:08 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,807 MB. GUI used memory: 177 MB. Current time: 4/22/21, 1:16:08 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,807 MB. GUI used memory: 177 MB. Current time: 4/22/21, 1:46:08 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,807 MB. GUI used memory: 177 MB. Current time: 4/22/21, 2:16:08 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,807 MB. GUI used memory: 177 MB. Current time: 4/22/21, 2:46:08 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,807 MB. GUI used memory: 177 MB. Current time: 4/22/21, 3:16:09 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,807 MB. GUI used memory: 177 MB. Current time: 4/22/21, 3:46:09 AM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,807 MB. GUI used memory: 177 MB. Current time: 4/22/21, 4:16:09 AM EET
+// Elapsed time: 67710 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cl)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (aH, cl)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (aH, cl)
+// Elapsed time: 490 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 13 seconds
+String[] filenames31467 = {"/home/egoncu/Desktop/github/customAXIPeripheral/hw/rtl/chu_debounce_core.vhd", "/home/egoncu/Desktop/github/customAXIPeripheral/hw/rtl/debounce_counter.vhd", "/home/egoncu/Desktop/github/customAXIPeripheral/hw/rtl/debounce_fsm.vhd"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 23 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+dismissDialog("Add Sources"); // c (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {/home/egoncu/Desktop/github/customAXIPeripheral/hw/rtl/chu_debounce_core.vhd /home/egoncu/Desktop/github/customAXIPeripheral/hw/rtl/debounce_fsm.vhd /home/egoncu/Desktop/github/customAXIPeripheral/hw/rtl/debounce_counter.vhd} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,839 MB. GUI used memory: 178 MB. Current time: 4/22/21, 4:43:49 AM EET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, chu_debounce_core(arch) (chu_debounce_core.vhd)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, chu_debounce_core(arch) (chu_debounce_core.vhd)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// Elapsed time: 14 seconds
+selectCodeEditor("chu_debounce_core.vhd", 157, 65); // cl (w, cl)
+// Elapsed time: 62 seconds
+selectCodeEditor("chu_debounce_core.vhd", 57, 142); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("chu_debounce_core.vhd", 77, 43); // cl (w, cl)
+selectCodeEditor("chu_debounce_core.vhd", 59, 172); // cl (w, cl)
+selectCodeEditor("chu_debounce_core.vhd", 219, 170); // cl (w, cl)
+selectCodeEditor("chu_debounce_core.vhd", 175, 203); // cl (w, cl)
+selectCodeEditor("chu_debounce_core.vhd", 20, 125); // cl (w, cl)
+typeControlKey(null, null, 'z');
+selectCodeEditor("chu_debounce_core.vhd", 267, 199); // cl (w, cl)
+selectCodeEditor("chu_debounce_core.vhd", 16, 130); // cl (w, cl)
+selectCodeEditor("chu_debounce_core.vhd", 20, 360); // cl (w, cl)
+selectCodeEditor("chu_debounce_core.vhd", 17, 320); // cl (w, cl)
+selectCodeEditor("chu_debounce_core.vhd", 213, 344); // cl (w, cl)
+selectCodeEditor("chu_debounce_core.vhd", 20, 322); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("chu_debounce_core.vhd", 147, 67); // cl (w, cl)
+selectCodeEditor("chu_debounce_core.vhd", 136, 67); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectCodeEditor("chu_debounce_core.vhd", 12, 233); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,900 MB. GUI used memory: 178 MB. Current time: 4/22/21, 4:46:34 AM EET
+selectCodeEditor("chu_debounce_core.vhd", 385, 234, true, false, false, false, false); // cl (w, cl) - Shift Key
+selectCodeEditor("chu_debounce_core.vhd", 392, 159); // cl (w, cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+typeControlKey((HResource) null, "chu_debounce_core.vhd", 'v'); // cl (w, cl)
+// [Engine Memory]: 2,925 MB (+13950kb) [29:58:09]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("chu_debounce_core.vhd", 73, 179); // cl (w, cl)
+selectCodeEditor("chu_debounce_core.vhd", 73, 179, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("chu_debounce_core.vhd", 143, 176); // cl (w, cl)
+selectCodeEditor("chu_debounce_core.vhd", 118, 176); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,957 MB. GUI used memory: 178 MB. Current time: 4/22/21, 4:46:59 AM EET
+// Elapsed time: 18 seconds
+selectCodeEditor("chu_debounce_core.vhd", 366, 158); // cl (w, cl)
+selectCodeEditor("chu_debounce_core.vhd", 387, 178); // cl (w, cl)
+typeControlKey((HResource) null, "chu_debounce_core.vhd", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,989 MB. GUI used memory: 178 MB. Current time: 4/22/21, 4:47:24 AM EET
+// Elapsed time: 13 seconds
+selectCodeEditor("chu_debounce_core.vhd", 363, 159); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("chu_debounce_core.vhd", 51, 142); // cl (w, cl)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,036 MB. GUI used memory: 178 MB. Current time: 4/22/21, 4:47:39 AM EET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 62 seconds
+selectCodeEditor("chu_debounce_core.vhd", 373, 98, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce_core(arch) (chu_debounce_core.vhd), db_counter_unit : debounce_counter(arch) (debounce_counter.vhd)]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce_core(arch) (chu_debounce_core.vhd), db_counter_unit : debounce_counter(arch) (debounce_counter.vhd)]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce_core(arch) (chu_debounce_core.vhd), db_counter_unit : debounce_counter(arch) (debounce_counter.vhd)]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce_core(arch) (chu_debounce_core.vhd), db_counter_unit : debounce_counter(arch) (debounce_counter.vhd)]", 3, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce_core(arch) (chu_debounce_core.vhd), db_counter_unit : debounce_counter(arch) (debounce_counter.vhd)]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce_core(arch) (chu_debounce_core.vhd), db_counter_unit : debounce_counter(arch) (debounce_counter.vhd)]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce_core(arch) (chu_debounce_core.vhd), db_counter_unit : debounce_counter(arch) (debounce_counter.vhd)]", 3, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce_core(arch) (chu_debounce_core.vhd), gen_fsm_cell[0].db_fsm_unit : debounce_fsm(arch) (debounce_fsm.vhd)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce_core(arch) (chu_debounce_core.vhd), gen_fsm_cell[0].db_fsm_unit : debounce_fsm(arch) (debounce_fsm.vhd)]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// by (cl):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd} 
+dismissDialog("Open Block Design"); // by (cl)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (aH, cl)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (aH, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets gpioIP_0_btn] 
+// Elapsed time: 18 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 102, 89, 971, 504, false, false, false, true, false); // gl (k, cl) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, "Add Module..."); // ah (an, cl)
+// ci (cl): Add Module: addNotify
+selectList(PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST, "debounce_core(arch) (chu_debounce_core.vhd)", 1); // cm (O, ci)
+selectList(PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST, "debounce_core(arch) (chu_debounce_core.vhd)", 1, false, false, false, false, true); // cm (O, ci) - Double Click
+dismissDialog("Add Module"); // ci (cl)
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// by (cl):  Add Module : addNotify
+// Tcl Message: create_bd_cell -type module -reference debounce_core debounce_core_0 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'. 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0'. 
+dismissDialog("Add Module"); // by (cl)
+// [Engine Memory]: 3,077 MB (+6131kb) [30:00:59]
+// Tcl Command: 'set_property location {0.5 -348 -225} [get_bd_cells debounce_core_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {0.5 -348 -225} [get_bd_cells debounce_core_0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins debounce_core_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0] 
+// Elapsed time: 24 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cl)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cl)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "logiv"); // OverlayTextField (aF, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "logi"); // OverlayTextField (aF, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Utility Reduced Logic", 9, "Utility Reduced Logic", 0, false); // L (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Utility Reduced Logic", 9); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Utility Reduced Logic", 9, "Utility Reduced Logic", 0, false, false, false, false, false, true); // L (O, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:util_reduced_logic:2.0 util_reduced_logic_0 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cl): Re-customize IP: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 3,106 MB. GUI used memory: 182 MB. Current time: 4/22/21, 4:50:09 AM EET
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells util_reduced_logic_0] 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cl)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "logic"); // OverlayTextField (aF, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Utility Vector Logic", 10, "Utility Vector Logic", 0, false); // L (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Utility Vector Logic", 10); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Utility Vector Logic", 10, "Utility Vector Logic", 0, false, false, false, false, false, true); // L (O, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cl): Re-customize IP: addNotify
+selectRadioButton((HResource) null, "not"); // aT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,162 MB. GUI used memory: 183 MB. Current time: 4/22/21, 4:50:24 AM EET
+setText("C_SIZE", "1"); // z (bh, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// Tcl Command: 'set_property -dict [list CONFIG.C_SIZE {1} CONFIG.C_OPERATION {not} CONFIG.LOGO_FILE {data/sym_notgate.png}] [get_bd_cells util_vector_logic_0]'
+// TclEventType: RSB_PROPERTY_CHANGE
+dismissDialog("Re-customize IP"); // r (cl)
+// Tcl Message: set_property -dict [list CONFIG.C_SIZE {1} CONFIG.C_OPERATION {not} CONFIG.LOGO_FILE {data/sym_notgate.png}] [get_bd_cells util_vector_logic_0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins debounce_core_0/reset] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins util_vector_logic_0/Op1] [get_bd_pins rst_ps7_0_102M/peripheral_aresetn] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets util_vector_logic_0_Res] [get_bd_cells util_vector_logic_0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins rst_ps7_0_102M/peripheral_reset] [get_bd_pins debounce_core_0/reset] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins debounce_core_0/db_out] [get_bd_pins stream_generator_0/start] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins debounce_core_0/din] [get_bd_pins gpioIP_0/btn] 
