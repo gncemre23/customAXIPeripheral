@@ -199,7 +199,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>POLARITY</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_74b5137e">ACTIVE_LOW</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -266,7 +266,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ca18a92b</spirit:value>
+            <spirit:value>ad086a23</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -282,7 +282,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ca18a92b</spirit:value>
+            <spirit:value>ad086a23</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -708,7 +708,7 @@
       <spirit:enumeration>32</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_74b5137e</spirit:name>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
       <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
       <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
     </spirit:choice>
@@ -857,8 +857,8 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>gpioIP_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-04-21T06:33:43Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-04-22T06:08:04Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@7a6f9220_ARCHIVE_LOCATION">/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@ef0ac8b_ARCHIVE_LOCATION">/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0</xilinx:tag>
@@ -878,14 +878,25 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@18a8f1ce_ARCHIVE_LOCATION">/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@46f008d8_ARCHIVE_LOCATION">/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@82e9c34_ARCHIVE_LOCATION">/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c90d455_ARCHIVE_LOCATION">/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@797aad7e_ARCHIVE_LOCATION">/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11c4906b_ARCHIVE_LOCATION">/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e404265_ARCHIVE_LOCATION">/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43e3ed6d_ARCHIVE_LOCATION">/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8e5e25a_ARCHIVE_LOCATION">/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@359eb649_ARCHIVE_LOCATION">/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@580ffa87_ARCHIVE_LOCATION">/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52e571f2_ARCHIVE_LOCATION">/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a68f6d2_ARCHIVE_LOCATION">/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dbdd51b_ARCHIVE_LOCATION">/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a6aebf4"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a63f3fc"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="52150bc9"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="5d549788"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4604cf22"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="ad4ed4a1"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6992ea72"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="880583fd"/>
     </xilinx:packagingInfo>

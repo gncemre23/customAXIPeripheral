@@ -2,91 +2,137 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Apr 20 22:48:21 2021
-# Process ID: 188536
+# Start of session at: Fri Apr 23 01:41:13 2021
+# Process ID: 2954
 # Current directory: /home/egoncu/Desktop/github/customAXIPeripheral/prj
-# Command line: vivado
+# Command line: vivado customPer/customPer.xpr
 # Log file: /home/egoncu/Desktop/github/customAXIPeripheral/prj/vivado.log
 # Journal file: /home/egoncu/Desktop/github/customAXIPeripheral/prj/vivado.jou
 #-----------------------------------------------------------
 start_gui
-create_project customPer /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer -part xc7z020clg484-1
+open_project customPer/customPer.xpr
+Scanning sources...
+Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
-create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 6403.199 ; gain = 60.914 ; free physical = 146 ; free virtual = 3422
-set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
-set_property target_language VHDL [current_project]
-file mkdir /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/new
-close [ open /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/new/customPeripheral.vhd w ]
-add_files /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/new/customPeripheral.vhd
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 6449.578 ; gain = 139.996 ; free physical = 2094 ; free virtual = 6027
+launch_sdk -workspace /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.sdk -hwspec /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.sdk -hwspec /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
 update_compile_order -fileset sources_1
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-create_peripheral user.org user customPeripheral 1.0 -dir /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo
-add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core user.org:user:customPeripheral:1.0]
-add_peripheral_interface S00_AXIS -interface_mode slave -axi_type stream [ipx::find_open_core user.org:user:customPeripheral:1.0]
-generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core user.org:user:customPeripheral:1.0]
-write_peripheral [ipx::find_open_core user.org:user:customPeripheral:1.0]
-set_property  ip_repo_paths  /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0 [current_project]
-update_ip_catalog -rebuild
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0'.
-update_ip_catalog -rebuild
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0'.
-create_ip -name customPeripheral -vendor user.org -library user -version 1.0 -module_name customPeripheral_0
-generate_target {instantiation_template} [get_files /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/ip/customPeripheral_0/customPeripheral_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'customPeripheral_0'...
-update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/ip/customPeripheral_0/customPeripheral_0.xci] -no_script -reset -force -quiet
-remove_files  /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/ip/customPeripheral_0/customPeripheral_0.xci
-file delete -force /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/ip/customPeripheral_0
-create_bd_design "design_1"
-Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd> 
-create_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 6632.078 ; gain = 91.355 ; free physical = 139 ; free virtual = 3368
-update_compile_order -fileset sources_1
+file mkdir /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.sdk
+file copy -force /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.runs/impl_1/design_1_wrapper.sysdef /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.sdk -hwspec /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.sdk -hwspec /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_102M
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding component instance block -- xilinx.com:module_ref:debounce_core:1.0 - debounce_core_0
+Adding component instance block -- user.org:user:gpioIP:1.0 - gpioIP_0
+Adding component instance block -- xilinx.com:module_ref:stream_generator:1.0 - stream_generator_0
+Adding component instance block -- user.org:user:customPeripheral:1.0 - customPeripheral_0
+Successfully read diagram <design_1> from BD file </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 6584.949 ; gain = 5.207 ; free physical = 150 ; free virtual = 5156
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_intf_nets axi_interconnect_0_M01_AXI] [get_bd_intf_nets axi_gpio_0_GPIO2] [get_bd_cells axi_gpio_0]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M02_AXI] [get_bd_intf_nets axi_gpio_1_GPIO] [get_bd_cells axi_gpio_1]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M03_AXI] [get_bd_nets customPeripheral_0_gpo] [get_bd_nets gpioIP_0_switches] [get_bd_nets gpioIP_0_btn] [get_bd_cells gpioIP_0]
+delete_bd_objs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 6751.332 ; gain = 0.000 ; free physical = 291 ; free virtual = 4152
+delete_bd_objs [get_bd_intf_ports sws_8bits]
+delete_bd_objs [get_bd_intf_ports leds_8bits]
+delete_bd_objs [get_bd_intf_ports btns_5bits]
 startgroup
-create_bd_cell -type ip -vlnv user.org:user:customPeripheral:1.0 customPeripheral_0
+make_bd_pins_external  [get_bd_pins customPeripheral_0/gpi]
 endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins customPeripheral_0/gpo]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins debounce_core_0/din]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /debounce_core_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /debounce_core_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /stream_generator_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+save_bd_design
+Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+file mkdir /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/constrs_1
+file mkdir /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/constrs_1/new
+close [ open /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/constrs_1/new/zedBoard.xdc w ]
+add_files -fileset constrs_1 /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/constrs_1/new/zedBoard.xdc
+set_property target_constrs_file /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/constrs_1/new/zedBoard.xdc [current_fileset -constrset]
+reset_run synth_1
+reset_run design_1_xbar_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block customPeripheral_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_102M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block stream_generator_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debounce_core_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 139df63976d586e2; cache size = 3,797 MB.
+[Fri Apr 23 07:09:04 2021] Launched design_1_xbar_0_synth_1, design_1_processing_system7_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_xbar_0_synth_1: /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.runs/design_1_xbar_0_synth_1/runme.log
+design_1_processing_system7_0_0_synth_1: /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.runs/design_1_processing_system7_0_0_synth_1/runme.log
+synth_1: /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.runs/synth_1/runme.log
+[Fri Apr 23 07:09:04 2021] Launched impl_1...
+Run output will be captured here: /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:47 ; elapsed = 00:00:39 . Memory (MB): peak = 7020.562 ; gain = 109.723 ; free physical = 924 ; free virtual = 4665
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Apr 23 07:16:41 2021] Launched synth_1...
+Run output will be captured here: /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.runs/synth_1/runme.log
+[Fri Apr 23 07:16:41 2021] Launched impl_1...
+Run output will be captured here: /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.runs/impl_1/runme.log
+file mkdir /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.sdk
+file copy -force /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.runs/impl_1/design_1_wrapper.sysdef /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.sdk -hwspec /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.sdk -hwspec /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
 ipx::edit_ip_in_project -upgrade true -name customPeripheral_v1_0_project -directory /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.tmp/customPeripheral_v1_0_project /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0/component.xml
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 7020.562 ; gain = 0.000 ; free physical = 721 ; free virtual = 3859
 INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0'.
 INFO: [IP_Flow 19-795] Syncing license key meta-data
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 6717.926 ; gain = 31.887 ; free physical = 152 ; free virtual = 3284
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 7020.562 ; gain = 0.000 ; free physical = 656 ; free virtual = 3798
 update_compile_order -fileset sources_1
-create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name fifo_generator_0 -dir /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0/src
-set_property -dict [list CONFIG.INTERFACE_TYPE {Native} CONFIG.Performance_Options {First_Word_Fall_Through} CONFIG.Input_Data_Width {32} CONFIG.Input_Depth {4096} CONFIG.Output_Data_Width {32} CONFIG.Output_Depth {4096} CONFIG.Reset_Pin {false} CONFIG.Reset_Type {Asynchronous_Reset} CONFIG.Full_Flags_Reset_Value {0} CONFIG.Use_Dout_Reset {false} CONFIG.Use_Extra_Logic {true} CONFIG.Data_Count {true} CONFIG.Data_Count_Width {13} CONFIG.Write_Data_Count_Width {13} CONFIG.Read_Data_Count_Width {13} CONFIG.Full_Threshold_Assert_Value {4095} CONFIG.Full_Threshold_Negate_Value {4094} CONFIG.Empty_Threshold_Assert_Value {4} CONFIG.Empty_Threshold_Negate_Value {5} CONFIG.TDATA_NUM_BYTES {4} CONFIG.TSTRB_WIDTH {4} CONFIG.TKEEP_WIDTH {4} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_wach {15} CONFIG.Empty_Threshold_Assert_Value_wach {14} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_wrch {15} CONFIG.Empty_Threshold_Assert_Value_wrch {14} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_rach {15} CONFIG.Empty_Threshold_Assert_Value_rach {14} CONFIG.Input_Depth_axis {4096} CONFIG.Enable_Data_Counts_axis {false} CONFIG.Full_Threshold_Assert_Value_axis {4095} CONFIG.Empty_Threshold_Assert_Value_axis {4094} CONFIG.Enable_Safety_Circuit {false}] [get_ips fifo_generator_0]
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Empty_Threshold_Assert_Value_wrch' from '1022' to '14' has been ignored for IP 'fifo_generator_0'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Empty_Threshold_Assert_Value_wach' from '1022' to '14' has been ignored for IP 'fifo_generator_0'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Empty_Threshold_Assert_Value_rach' from '1022' to '14' has been ignored for IP 'fifo_generator_0'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Empty_Threshold_Assert_Value_axis' from '1022' to '4094' has been ignored for IP 'fifo_generator_0'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Full_Threshold_Assert_Value_wrch' from '1023' to '15' has been ignored for IP 'fifo_generator_0'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Full_Threshold_Assert_Value_wach' from '1023' to '15' has been ignored for IP 'fifo_generator_0'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Full_Threshold_Assert_Value_rach' from '1023' to '15' has been ignored for IP 'fifo_generator_0'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Full_Threshold_Assert_Value_axis' from '1023' to '4095' has been ignored for IP 'fifo_generator_0'
-generate_target {instantiation_template} [get_files /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0/src/fifo_generator_0/fifo_generator_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo_generator_0'...
-update_compile_order -fileset sources_1
-close [ open /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0/src/timer.vhd w ]
-add_files /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0/src/timer.vhd
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-generate_target all [get_files  /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0/src/fifo_generator_0/fifo_generator_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_generator_0'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fifo_generator_0'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fifo_generator_0'...
-catch { config_ip_cache -export [get_ips -all fifo_generator_0] }
-export_ip_user_files -of_objects [get_files /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0/src/fifo_generator_0/fifo_generator_0.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0/src/fifo_generator_0/fifo_generator_0.xci]
-launch_runs -jobs 2 fifo_generator_0_synth_1
-[Wed Apr 21 00:55:57 2021] Launched fifo_generator_0_synth_1...
-Run output will be captured here: /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.tmp/customPeripheral_v1_0_project/customPeripheral_v1_0_project.runs/fifo_generator_0_synth_1/runme.log
-export_simulation -of_objects [get_files /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0/src/fifo_generator_0/fifo_generator_0.xci] -directory /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.tmp/customPeripheral_v1_0_project/customPeripheral_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.tmp/customPeripheral_v1_0_project/customPeripheral_v1_0_project.ip_user_files -ipstatic_source_dir /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.tmp/customPeripheral_v1_0_project/customPeripheral_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.tmp/customPeripheral_v1_0_project/customPeripheral_v1_0_project.cache/compile_simlib/modelsim} {questa=/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.tmp/customPeripheral_v1_0_project/customPeripheral_v1_0_project.cache/compile_simlib/questa} {ies=/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.tmp/customPeripheral_v1_0_project/customPeripheral_v1_0_project.cache/compile_simlib/ies} {xcelium=/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.tmp/customPeripheral_v1_0_project/customPeripheral_v1_0_project.cache/compile_simlib/xcelium} {vcs=/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.tmp/customPeripheral_v1_0_project/customPeripheral_v1_0_project.cache/compile_simlib/vcs} {riviera=/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.tmp/customPeripheral_v1_0_project/customPeripheral_v1_0_project.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
 ipx::merge_project_changes files [ipx::current_core]
 WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
 WARNING: [IP_Flow 19-4963] fifo_generator_0 has board value specified. The packaged IP will be restricted to usage with board 'em.avnet.com:zed:part0:1.4'
@@ -96,7 +142,7 @@ WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for t
 WARNING: [IP_Flow 19-4963] fifo_generator_0 has board value specified. The packaged IP will be restricted to usage with board 'em.avnet.com:zed:part0:1.4'
 WARNING: [IP_Flow 19-5226] Project source file '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0/component.xml' ignored by IP packager.
 INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
-set_property core_revision 2 [ipx::current_core]
+set_property core_revision 5 [ipx::current_core]
 ipx::update_source_project_archive -component [ipx::current_core]
 ipx::create_xgui_files [ipx::current_core]
 ipx::update_checksums [ipx::current_core]
@@ -106,351 +152,41 @@ close_project -delete
 update_ip_catalog -rebuild -repo_path /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0
 INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0'
 report_ip_status -name ip_status 
-upgrade_ip [get_ips  design_1_customPeripheral_0_0] -log ip_upgrade.log
-Upgrading '/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd'
-INFO: [IP_Flow 19-3422] Upgraded design_1_customPeripheral_0_0 (customPeripheral_v1.0 1.0) from revision 1 to revision 2
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'gpi'
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'gpo'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_customPeripheral_0_0'. These changes may impact your design.
-CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_customPeripheral_0_0' has identified issues that may require user intervention. Please review the upgrade log '/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
-Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/ip_upgrade.log'.
-export_ip_user_files -of_objects [get_ips design_1_customPeripheral_0_0] -no_script -sync -force -quiet
-close [ open /home/egoncu/Desktop/github/customAXIPeripheral/hw/stream_generator.vhd w ]
-add_files /home/egoncu/Desktop/github/customAXIPeripheral/hw/stream_generator.vhd
-update_compile_order -fileset sources_1
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
-endgroup
-set_property location {0.5 -88 -68} [get_bd_cells processing_system7_0]
-WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
-startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
-endgroup
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0
-endgroup
-connect_bd_intf_net [get_bd_intf_pins processing_system7_0/M_AXI_GP0] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/S00_AXI]
-startgroup
-set_property -dict [list CONFIG.NUM_MI {1}] [get_bd_cells axi_interconnect_0]
-endgroup
-connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M00_AXI] [get_bd_intf_pins customPeripheral_0/S00_AXI]
-connect_bd_net [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins axi_interconnect_0/ACLK]
-startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (102 MHz)" }  [get_bd_pins customPeripheral_0/s00_axi_aclk]
-INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (102 MHz)" }  [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]
-INFO: [BD 5-455] Automation on '/axi_interconnect_0/ACLK' will not be run, since it is obsolete due to previously run automations
-INFO: [BD 5-455] Automation on '/axi_interconnect_0/S00_ACLK' will not be run, since it is obsolete due to previously run automations
-INFO: [BD 5-455] Automation on '/axi_interconnect_0/M00_ACLK' will not be run, since it is obsolete due to previously run automations
-endgroup
-connect_bd_net [get_bd_pins customPeripheral_0/s00_axis_aresetn] [get_bd_pins rst_ps7_0_102M/peripheral_aresetn]
-connect_bd_net [get_bd_pins customPeripheral_0/s00_axis_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
-startgroup
-make_bd_pins_external  [get_bd_pins customPeripheral_0/gpi]
-endgroup
-startgroup
-make_bd_pins_external  [get_bd_pins customPeripheral_0/gpo]
-endgroup
-create_bd_cell -type module -reference stream_generator stream_generator_0
-INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
-WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'rst_n' is not *resetn - please double check the POLARITY setting.
-WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0'.
-startgroup
-make_bd_pins_external  [get_bd_pins stream_generator_0/start]
-endgroup
-startgroup
-connect_bd_net [get_bd_pins stream_generator_0/rst_n] [get_bd_pins rst_ps7_0_102M/peripheral_aresetn]
-endgroup
-connect_bd_net [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins rst_ps7_0_102M/peripheral_aresetn]
-connect_bd_net [get_bd_pins customPeripheral_0/s00_axis_tready] [get_bd_pins stream_generator_0/axi_t_ready]
-WARNING: [BD 41-1306] The connection to interface pin /customPeripheral_0/s00_axis_tready is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXIS
-connect_bd_net [get_bd_pins stream_generator_0/axi_t_valid] [get_bd_pins customPeripheral_0/s00_axis_tvalid]
-WARNING: [BD 41-1306] The connection to interface pin /customPeripheral_0/s00_axis_tvalid is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXIS
-connect_bd_net [get_bd_pins stream_generator_0/axi_t_last] [get_bd_pins customPeripheral_0/s00_axis_tlast]
-WARNING: [BD 41-1306] The connection to interface pin /customPeripheral_0/s00_axis_tlast is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXIS
-connect_bd_net [get_bd_pins stream_generator_0/axi_t_last] [get_bd_pins customPeripheral_0/s00_axis_tdata]
-WARNING: [BD 41-1306] The connection to interface pin /customPeripheral_0/s00_axis_tdata is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXIS
-disconnect_bd_net /stream_generator_0_axi_t_last [get_bd_pins customPeripheral_0/s00_axis_tdata]
-connect_bd_net [get_bd_pins customPeripheral_0/s00_axis_tdata] [get_bd_pins stream_generator_0/axi_t_sdata]
-WARNING: [BD 41-1306] The connection to interface pin /customPeripheral_0/s00_axis_tdata is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXIS
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-ipx::edit_ip_in_project -upgrade true -name customPeripheral_v1_0_project -directory /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.tmp/customPeripheral_v1_0_project /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0/component.xml
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 7355.105 ; gain = 0.000 ; free physical = 130 ; free virtual = 1953
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0'.
-INFO: [IP_Flow 19-795] Syncing license key meta-data
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 7355.105 ; gain = 0.000 ; free physical = 115 ; free virtual = 1942
-update_compile_order -fileset sources_1
-close_project
-write_bd_tcl -force /home/egoncu/Desktop/github/customAXIPeripheral/hw/bd/design_1.tcl
-INFO: [BD 5-148] Tcl file written out </home/egoncu/Desktop/github/customAXIPeripheral/hw/bd/design_1.tcl>.
-
-WARNING: [BD 5-339] The block design <design_1> has not been validated, therefore, a block design created using this Tcl file
-</home/egoncu/Desktop/github/customAXIPeripheral/hw/bd/design_1.tcl> may result in errors during validation.
-add_files -norecurse /home/egoncu/Desktop/github/customAXIPeripheral/hw/rtl/stream_generator.vhd
-update_compile_order -fileset sources_1
-connect_bd_net [get_bd_pins stream_generator_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
-export_ip_user_files -of_objects  [get_files /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/new/customPeripheral.vhd] -no_script -reset -force -quiet
-remove_files  /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/new/customPeripheral.vhd
-file delete -force /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/new/customPeripheral.vhd
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
-apply_board_connection -board_interface "sws_8bits" -ip_intf "axi_gpio_0/GPIO" -diagram "design_1" 
-INFO: [board_interface 100-100] current_bd_design design_1
-INFO: [board_interface 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /axi_gpio_0]
-INFO: [board_interface 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE sws_8bits [get_bd_cells -quiet /axi_gpio_0]
-INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 sws_8bits
-INFO: [board_interface 100-100] connect_bd_intf_net /sws_8bits /axi_gpio_0/GPIO
-endgroup
-apply_board_connection -board_interface "leds_8bits" -ip_intf "axi_gpio_0/GPIO2" -diagram "design_1" 
-INFO: [board_interface 100-100] current_bd_design design_1
-INFO: [board_interface 100-100] set_property CONFIG.GPIO2_BOARD_INTERFACE leds_8bits [get_bd_cells -quiet /axi_gpio_0]
-INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 leds_8bits
-INFO: [board_interface 100-100] connect_bd_intf_net /leds_8bits /axi_gpio_0/GPIO2
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
-apply_board_connection -board_interface "btns_5bits" -ip_intf "axi_gpio_1/GPIO" -diagram "design_1" 
-INFO: [board_interface 100-100] current_bd_design design_1
-INFO: [board_interface 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /axi_gpio_1]
-INFO: [board_interface 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE btns_5bits [get_bd_cells -quiet /axi_gpio_1]
-INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 btns_5bits
-INFO: [board_interface 100-100] connect_bd_intf_net /btns_5bits /axi_gpio_1/GPIO
-endgroup
-startgroup
-set_property -dict [list CONFIG.NUM_MI {3}] [get_bd_cells axi_interconnect_0]
-endgroup
-connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI] [get_bd_intf_pins axi_gpio_1/S_AXI]
-connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M02_AXI] [get_bd_intf_pins axi_gpio_0/S_AXI]
-startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (102 MHz)" }  [get_bd_pins axi_interconnect_0/M01_ACLK]
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (102 MHz)" }  [get_bd_pins axi_interconnect_0/M02_ACLK]
-INFO: [BD 5-455] Automation on '/axi_gpio_0/s_axi_aclk' will not be run, since it is obsolete due to previously run automations
-INFO: [BD 5-455] Automation on '/axi_gpio_1/s_axi_aclk' will not be run, since it is obsolete due to previously run automations
-endgroup
-delete_bd_objs [get_bd_intf_nets axi_gpio_1_GPIO]
-delete_bd_objs [get_bd_intf_ports btns_5bits]
-connect_bd_net [get_bd_ports start_0] [get_bd_pins axi_gpio_1/gpio_io_i]
-WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_1/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
-delete_bd_objs [get_bd_ports start_0]
-delete_bd_objs [get_bd_nets start_0_1]
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0
-endgroup
-set_property location {2.5 776 -508} [get_bd_cells xlslice_0]
-connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_i] [get_bd_pins xlslice_0/Din]
-WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_1/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
-1
-startgroup
-set_property -dict [list CONFIG.DIN_TO {1} CONFIG.DIN_WIDTH {5} CONFIG.DOUT_WIDTH {1} CONFIG.DIN_TO {1} CONFIG.DIN_FROM {1}] [get_bd_cells xlslice_0]
-endgroup
-connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins stream_generator_0/start]
-delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO]
-delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO2]
-undo
-INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO2]'
-undo
-INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO]'
-undo
-INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins stream_generator_0/start]'
-undo
-INFO: [Common 17-17] undo 'endgroup'
-INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.DIN_TO {1} CONFIG.DIN_WIDTH {5} CONFIG.DOUT_WIDTH {1} CONFIG.DIN_TO {1} CONFIG.DIN_FROM {1}] [get_bd_cells xlslice_0]'
-INFO: [Common 17-17] undo 'startgroup'
-undo
-INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_i] [get_bd_pins xlslice_0/Din]'
-undo
-INFO: [Common 17-17] undo 'set_property location {2.5 776 -508} [get_bd_cells xlslice_0]'
-undo
-INFO: [Common 17-17] undo 'endgroup'
-INFO: [Common 17-17] undo 'create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0'
-INFO: [Common 17-17] undo 'startgroup'
-undo
-INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets start_0_1]'
-undo
-INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_ports start_0]'
-undo
-INFO: [Common 17-17] undo 'connect_bd_net [get_bd_ports start_0] [get_bd_pins axi_gpio_1/gpio_io_i]'
-undo
-INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_ports btns_5bits]'
-undo
-INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets axi_gpio_1_GPIO]'
-startgroup
-set_property -dict [list CONFIG.C_GPIO_WIDTH {4} CONFIG.C_GPIO2_WIDTH {4} CONFIG.C_ALL_INPUTS {0} CONFIG.GPIO_BOARD_INTERFACE {Custom} CONFIG.GPIO2_BOARD_INTERFACE {Custom} CONFIG.C_ALL_OUTPUTS_2 {0}] [get_bd_cells axi_gpio_0]
-endgroup
-set_property name sws_4bits [get_bd_intf_ports sws_8bits]
-set_property name leds_4bits [get_bd_intf_ports leds_8bits]
-startgroup
-set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_ALL_INPUTS {0} CONFIG.GPIO_BOARD_INTERFACE {Custom}] [get_bd_cells axi_gpio_1]
-endgroup
-undo
-INFO: [Common 17-17] undo 'endgroup'
-INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_ALL_INPUTS {0} CONFIG.GPIO_BOARD_INTERFACE {Custom}] [get_bd_cells axi_gpio_1]'
-INFO: [Common 17-17] undo 'startgroup'
-undo
-INFO: [Common 17-17] undo 'set_property name leds_4bits [get_bd_intf_ports leds_8bits]'
-undo
-INFO: [Common 17-17] undo 'set_property name sws_4bits [get_bd_intf_ports sws_8bits]'
-undo
-INFO: [Common 17-17] undo 'endgroup'
-INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.C_GPIO_WIDTH {4} CONFIG.C_GPIO2_WIDTH {4} CONFIG.C_ALL_INPUTS {0} CONFIG.GPIO_BOARD_INTERFACE {Custom} CONFIG.GPIO2_BOARD_INTERFACE {Custom} CONFIG.C_ALL_OUTPUTS_2 {0}] [get_bd_cells axi_gpio_0]'
-INFO: [Common 17-17] undo 'startgroup'
-undo
-INFO: [Common 17-17] undo 'endgroup'
-INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (102 MHz)" }  [get_bd_pins axi_interconnect_0/M02_ACLK]'
-INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (102 MHz)" }  [get_bd_pins axi_interconnect_0/M01_ACLK]'
-INFO: [Common 17-17] undo 'startgroup'
-undo
-INFO: [Common 17-17] undo 'connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M02_AXI] [get_bd_intf_pins axi_gpio_0/S_AXI]'
-undo
-INFO: [Common 17-17] undo 'connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI] [get_bd_intf_pins axi_gpio_1/S_AXI]'
-undo
-INFO: [Common 17-17] undo 'endgroup'
-INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.NUM_MI {3}] [get_bd_cells axi_interconnect_0]'
-INFO: [Common 17-17] undo 'startgroup'
-startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (102 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (102 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
-Slave segment </axi_gpio_0/S_AXI/Reg> is being mapped into address space </processing_system7_0/Data> at <0x4120_0000 [ 64K ]>
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (102 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (102 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_1/S_AXI} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins axi_gpio_1/S_AXI]
-Slave segment </axi_gpio_1/S_AXI/Reg> is being mapped into address space </processing_system7_0/Data> at <0x4121_0000 [ 64K ]>
-endgroup
-save_bd_design
-Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-delete_bd_objs [get_bd_nets start_0_1]
-delete_bd_objs [get_bd_ports start_0]
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-create_peripheral user.org user gpioIP 1.0 -dir /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo
-add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core user.org:user:gpioIP:1.0]
-generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core user.org:user:gpioIP:1.0]
-write_peripheral [ipx::find_open_core user.org:user:gpioIP:1.0]
-set_property  ip_repo_paths  {/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0 /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0} [current_project]
-update_ip_catalog -rebuild
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0'.
-open_bd_design {/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd}
-startgroup
-create_bd_cell -type ip -vlnv user.org:user:gpioIP:1.0 gpioIP_0
-endgroup
-startgroup
-set_property -dict [list CONFIG.NUM_MI {4}] [get_bd_cells axi_interconnect_0]
-endgroup
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (102 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (102 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/gpioIP_0/S00_AXI} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins gpioIP_0/S00_AXI]
-Slave segment </gpioIP_0/S00_AXI/S00_AXI_reg> is being mapped into address space </processing_system7_0/Data> at <0x43C0_0000 [ 64K ]>
-ipx::edit_ip_in_project -upgrade true -name gpioIP_v1_0_project -directory /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.tmp/gpioIP_v1_0_project /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0/component.xml
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0'.
-INFO: [IP_Flow 19-795] Syncing license key meta-data
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 7596.492 ; gain = 10.008 ; free physical = 570 ; free virtual = 1777
-update_compile_order -fileset sources_1
-ipx::merge_project_changes files [ipx::current_core]
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-WARNING: [IP_Flow 19-5226] Project source file '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0/component.xml' ignored by IP packager.
-ipx::merge_project_changes hdl_parameters [ipx::current_core]
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-WARNING: [IP_Flow 19-5226] Project source file '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0/component.xml' ignored by IP packager.
-INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
-set_property core_revision 2 [ipx::current_core]
-ipx::update_source_project_archive -component [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::save_core [ipx::current_core]
-ipx::move_temp_component_back -component [ipx::current_core]
-close_project -delete
-update_ip_catalog -rebuild -repo_path /home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0
-INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0'
 upgrade_ip -vlnv user.org:user:customPeripheral:1.0 [get_ips  design_1_customPeripheral_0_0] -log ip_upgrade.log
 Upgrading '/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd'
-INFO: [IP_Flow 19-3420] Updated design_1_customPeripheral_0_0 to use current project options
+INFO: [IP_Flow 19-3422] Upgraded design_1_customPeripheral_0_0 (customPeripheral_v1.0 1.0) from revision 4 to revision 5
 Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
 INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/ip_upgrade.log'.
 export_ip_user_files -of_objects [get_ips design_1_customPeripheral_0_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [BD 41-927] Following properties on pin /debounce_core_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /debounce_core_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /stream_generator_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block customPeripheral_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_102M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block stream_generator_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debounce_core_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 139df63976d586e2; cache size = 5,016 MB.
+[Fri Apr 23 07:33:56 2021] Launched design_1_customPeripheral_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_customPeripheral_0_0_synth_1: /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.runs/design_1_customPeripheral_0_0_synth_1/runme.log
+synth_1: /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.runs/synth_1/runme.log
+[Fri Apr 23 07:33:56 2021] Launched impl_1...
+Run output will be captured here: /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 7165.926 ; gain = 0.000 ; free physical = 616 ; free virtual = 3800
 report_ip_status -name ip_status 
-upgrade_ip [get_ips  {design_1_gpioIP_0_0 design_1_stream_generator_0_0}] -log ip_upgrade.log
-INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
-WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'rst_n' is not *resetn - please double check the POLARITY setting.
-WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0'.
-Upgrading '/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd'
-INFO: [IP_Flow 19-3422] Upgraded design_1_gpioIP_0_0 (gpioIP_v1.0 1.0) from revision 1 to revision 2
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'btn'
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'leds'
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'switches'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_gpioIP_0_0'. These changes may impact your design.
-INFO: [IP_Flow 19-3420] Updated design_1_stream_generator_0_0 to use current project options
-CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_gpioIP_0_0' has identified issues that may require user intervention. Please review the upgrade log '/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
-Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/ip_upgrade.log'.
-export_ip_user_files -of_objects [get_ips {design_1_gpioIP_0_0 design_1_stream_generator_0_0}] -no_script -sync -force -quiet
-connect_bd_net [get_bd_pins gpioIP_0/leds] [get_bd_pins customPeripheral_0/gpo]
-delete_bd_objs [get_bd_ports gpo_0]
-delete_bd_objs [get_bd_nets gpi_0_1] [get_bd_ports gpi_0]
-connect_bd_net [get_bd_pins gpioIP_0/btn] [get_bd_pins stream_generator_0/start]
-connect_bd_net [get_bd_pins customPeripheral_0/gpi] [get_bd_pins gpioIP_0/switches]
-save_bd_design
-Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-write_bd_tcl -force /home/egoncu/Desktop/github/customAXIPeripheral/hw/bd/zedboard_bd.tcl
-INFO: [BD 5-148] Tcl file written out </home/egoncu/Desktop/github/customAXIPeripheral/hw/bd/zedboard_bd.tcl>.
-
-WARNING: [BD 5-339] The block design <design_1> has not been validated, therefore, a block design created using this Tcl file
-</home/egoncu/Desktop/github/customAXIPeripheral/hw/bd/zedboard_bd.tcl> may result in errors during validation.
-add_files -norecurse {/home/egoncu/Desktop/github/customAXIPeripheral/hw/rtl/chu_debounce_core.vhd /home/egoncu/Desktop/github/customAXIPeripheral/hw/rtl/debounce_fsm.vhd /home/egoncu/Desktop/github/customAXIPeripheral/hw/rtl/debounce_counter.vhd}
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-open_bd_design {/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd}
-delete_bd_objs [get_bd_nets gpioIP_0_btn]
-create_bd_cell -type module -reference debounce_core debounce_core_0
-INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
-WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0'.
-WARNING: [IP_Flow 19-3571] IP 'design_1_debounce_core_0_0' is restricted:
-* Detected changes to module reference file(s).
-set_property location {0.5 -348 -225} [get_bd_cells debounce_core_0]
-connect_bd_net [get_bd_pins debounce_core_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:util_reduced_logic:2.0 util_reduced_logic_0
-endgroup
-delete_bd_objs [get_bd_cells util_reduced_logic_0]
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0
-endgroup
-set_property -dict [list CONFIG.C_SIZE {1} CONFIG.C_OPERATION {not} CONFIG.LOGO_FILE {data/sym_notgate.png}] [get_bd_cells util_vector_logic_0]
-connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins debounce_core_0/reset]
-connect_bd_net [get_bd_pins util_vector_logic_0/Op1] [get_bd_pins rst_ps7_0_102M/peripheral_aresetn]
-delete_bd_objs [get_bd_nets util_vector_logic_0_Res] [get_bd_cells util_vector_logic_0]
-connect_bd_net [get_bd_pins rst_ps7_0_102M/peripheral_reset] [get_bd_pins debounce_core_0/reset]
-connect_bd_net [get_bd_pins debounce_core_0/db_out] [get_bd_pins stream_generator_0/start]
-connect_bd_net [get_bd_pins debounce_core_0/din] [get_bd_pins gpioIP_0/btn]

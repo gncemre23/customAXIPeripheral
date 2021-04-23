@@ -3122,3 +3122,748 @@ dismissDialog("Re-customize IP"); // r (cl)
 // Tcl Message: connect_bd_net [get_bd_pins debounce_core_0/db_out] [get_bd_pins stream_generator_0/start] 
 // TclEventType: RSB_CONNECTION_CHANGE
 // Tcl Message: connect_bd_net [get_bd_pins debounce_core_0/din] [get_bd_pins gpioIP_0/btn] 
+// Elapsed time: 266 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd)]", 5, true); // B (F, cl) - Node
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (F, cl)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd), design_1_stream_generator_0_0 (Module Reference Wrapper)]", 7, true); // B (F, cl) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd), design_1_stream_generator_0_0 (Module Reference Wrapper)]", 7); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd), design_1_stream_generator_0_0 (Module Reference Wrapper), stream_generator(Behavioral) (stream_generator.vhd)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd), design_1_stream_generator_0_0 (Module Reference Wrapper), stream_generator(Behavioral) (stream_generator.vhd)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd), design_1_stream_generator_0_0 (Module Reference Wrapper), stream_generator(Behavioral) (stream_generator.vhd)]", 8, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, stream_generator.vhd]", 2, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, stream_generator.vhd]", 2, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cl): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cl)
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/egoncu/Desktop/github/customAXIPeripheral/hw/stream_generator.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  /home/egoncu/Desktop/github/customAXIPeripheral/hw/stream_generator.vhd 
+// Elapsed time: 10 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd), design_1_stream_generator_0_0 (Module Reference Wrapper)]", 5); // B (F, cl)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k (j, cl)
+selectButton(PAResourceCommand.PACommandNames_AUTO_ASSIGN_ADDRESS, "Address Editor_auto_assign_address_rsb"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_ASSIGN_ADDRESS
+// Tcl Command: 'assign_bd_address'
+selectButton(PAResourceCommand.PACommandNames_AUTO_ASSIGN_ADDRESS, "Address Editor_auto_assign_address_rsb"); // B (f, cl)
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: assign_bd_address 
+// Tcl Message: Slave segment </customPeripheral_0/S00_AXI/S00_AXI_reg> is being mapped into address space </processing_system7_0/Data> at <0x43C1_0000 [ 64K ]> 
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd), design_1_gpioIP_0_0 (design_1_gpioIP_0_0.xci)]", 9, false); // B (F, cl)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cl)
+// Elapsed time: 10 seconds
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // B (f, cl)
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design 
+// by (cl):  Validate Design : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+dismissDialog("Validate Design"); // by (cl)
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+// Elapsed time: 21 seconds
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+setFileChooser("/home/egoncu/Desktop/github/customAXIPeripheral/hw/rtl/stream_generator.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 8 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+dismissDialog("Add Sources"); // c (cl)
+// Tcl Message: add_files -norecurse /home/egoncu/Desktop/github/customAXIPeripheral/hw/rtl/stream_generator.vhd 
+// Elapsed time: 15 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 16); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 16); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd), design_1_axi_gpio_1_0 (design_1_axi_gpio_1_0.xci)]", 7, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce_core(arch) (chu_debounce_core.vhd), gen_fsm_cell[0].db_fsm_unit : debounce_fsm(arch) (debounce_fsm.vhd)]", 3, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+closeMainWindow("customPer - [/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.xpr] - Vivado 2019.1"); // cl
+// al (cl): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// by (cl):  Save Constraints : addNotify
+dismissDialog("Save Project"); // al (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// A (cl): Exit Vivado: addNotify
+dismissDialog("Save Constraints"); // by (cl)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,260 MB. GUI used memory: 182 MB. Current time: 4/22/21, 4:57:54 AM EET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Exit Vivado"); // A (cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd), design_1_stream_generator_0_0 (Module Reference Wrapper)]", 6); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd), design_1_debounce_core_0_0 (Module Reference Wrapper)]", 5); // B (F, cl)
+// Elapsed time: 21 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h (cS, cl)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: update_module_reference design_1_stream_generator_0_0 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'. 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0'. 
+// Tcl Message: Upgrading '/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated design_1_stream_generator_0_0 to use current project options 
+// Tcl Message: Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// by (cl):  Refresh IP Catalog : addNotify
+// Tcl Message: update_module_reference design_1_debounce_core_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'. 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/gpioIP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/egoncu/Desktop/github/customAXIPeripheral/prj/ip_repo/customPeripheral_1.0'. 
+// Tcl Message: Upgrading '/home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated design_1_debounce_core_0_0 to use current project options 
+// Tcl Message: Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+dismissDialog("Refresh IP Catalog"); // by (cl)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd)]", 4, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd)]", 4, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd)]", 4, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a (cl): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create HDL Wrapper"); // a (cl)
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Create HDL Wrapper : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: make_wrapper -files [get_files /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd] -top 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/design_1.bd>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 3,304 MB (+77144kb) [30:10:41]
+// Tcl Message: VHDL Output written to : /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/synth/design_1.vhd VHDL Output written to : /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/sim/design_1.vhd VHDL Output written to : /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd 
+dismissDialog("Create HDL Wrapper"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,322 MB. GUI used memory: 182 MB. Current time: 4/22/21, 4:59:14 AM EET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd)]", 4, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd)]", 4, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top design_1_wrapper [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd)]", 1); // B (F, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,373 MB. GUI used memory: 182 MB. Current time: 4/22/21, 4:59:54 AM EET
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd), design_1_i : design_1 (design_1.bd), design_1(STRUCTURE) (design_1.vhd)]", 3); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd), design_1_i : design_1 (design_1.bd), design_1(STRUCTURE) (design_1.vhd)]", 3); // B (F, cl)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (cl):  Re-customize IP : addNotify
+// r (cl): Re-customize IP: addNotify
+// cl (r): Configuration Presets: addNotify
+// Elapsed time: 12 seconds
+dismissDialog("Re-customize IP"); // O (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,417 MB. GUI used memory: 190 MB. Current time: 4/22/21, 5:00:14 AM EET
+selectButton("Clock Configuration", "Clock Configuration"); // k (ch, r)
+selectButton("Clock Configuration", "Clock Configuration"); // k (ch, r)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 2); // A (O, r)
+collapseTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 2); // A (O, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// Tcl Message: startgroup 
+// Tcl Message: endgroup 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 372, 306, 572, 531, false, false, false, true, false); // gl (k, cl) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ae (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (cl):  Re-customize IP : addNotify
+// r (cl): Re-customize IP: addNotify
+// cl (r): Configuration Presets: addNotify
+dismissDialog("Re-customize IP"); // O (cl)
+selectButton("Peripheral I/O Pins", "Peripheral I/O Pins"); // k (ch, r)
+selectButton("Peripheral I/O Pins", "Peripheral I/O Pins"); // k (ch, r)
+// [GUI Memory]: 256 MB (+2459kb) [30:12:24]
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// [GUI Memory]: 281 MB (+12230kb) [30:12:25]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// f (cl): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (cl)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (f)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (f)
+// 'cx' command handler elapsed time: 6 seconds
+dismissDialog("Launch Runs"); // f (cl)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // B (f, cl)
+selectButton("OptionPane.button", "Cancel"); // JButton (A, G)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// f (cl): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (cl)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cx' command handler elapsed time: 3 seconds
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: VHDL Output written to : /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/synth/design_1.vhd VHDL Output written to : /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/sim/design_1.vhd VHDL Output written to : /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block customPeripheral_0 . 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,485 MB. GUI used memory: 221 MB. Current time: 4/22/21, 5:01:19 AM EET
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 3,491 MB (+23084kb) [30:13:13]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_102M . INFO: [BD 41-1029] Generation completed for the IP Integrator block stream_generator_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block gpioIP_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block debounce_core_0 . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File /home/egoncu/Desktop/github/customAXIPeripheral/prj/customPer/customPer.srcs/sources_1/bd/design_1/synth/design_1.hwdef 
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// WARNING: HEventQueue.dispatchEvent() is taking  1304 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,535 MB. GUI used memory: 223 MB. Current time: 4/22/21, 5:01:50 AM EET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 8653.160 ; gain = 218.938 ; free physical = 228 ; free virtual = 1184 
+// Elapsed time: 48 seconds
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2859 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 4122 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 30509 ms. Increasing delay to 91527 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 27118 ms. Increasing delay to 3000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 7849ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  21563 ms.
+// Thread: RunnableQueue-1
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at org.apache.batik.util.RunnableQueue.run(RunnableQueue.java:222)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Thread-47318
+// Thread: Java2D Disposer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.Disposer.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Timer-0
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.util.TimerThread.mainLoop(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.run(Unknown Source)
+// Thread: AWT-XAWT
+// 	at java.desktop@9.0.4/sun.awt.X11.XToolkit.waitForEvents(Native Method)
+// 	at java.desktop@9.0.4/sun.awt.X11.XToolkit.run(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.X11.XToolkit.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: SyntheticaAnimation 70
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Timer-15
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.mainLoop(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.run(Unknown Source)
+// Thread: Image Animator 3
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageWatched$WeakLink.update(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageWatched$WeakLink.newInfo(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageWatched$WeakLink.newInfo(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageWatched$WeakLink.newInfo(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageWatched$WeakLink.newInfo(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageWatched$WeakLink.newInfo(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageWatched$WeakLink.newInfo(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageWatched$WeakLink.newInfo(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageWatched$WeakLink.newInfo(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageWatched$WeakLink.newInfo(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageWatched.newInfo(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageRepresentation.imageComplete(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.image.ImageFilter.imageComplete(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageDecoder.imageComplete(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.GifFrame.dispose(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.GifImageDecoder.readImage(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.GifImageDecoder.produceImage(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.InputStreamImageSource.doFetch(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageFetcher.fetchloop(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageFetcher.run(Unknown Source)
+// Thread: Timer-16
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.mainLoop(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.run(Unknown Source)
+// Thread: Refresh Filesets Swing Worker
+// 	at ui.data.design.dai.HADAFileMgr_refreshFileSets(Native Method)
+// 	at ui.data.design.o.aij(SourceFile:2133)
+// 	at ui.data.design.o.aii(SourceFile:2124)
+// 	at ui.data.design.y.construct(SourceFile:2502)
+// 	at ui.frmwork.y.run(SourceFile:205)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at com.jidesoft.plaf.synthetica.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:99)
+// Thread: hw_ila_monitor
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.mainLoop(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.run(Unknown Source)
+// Thread: Reference Handler
+// 	at java.base@9.0.4/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.Reference.processPendingReferences(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference.access$000(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+// Thread: AWT-Shutdown
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.AWTAutoShutdown.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Common-Cleaner
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.ref.CleanerImpl.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.misc.InnocuousThread.run(Unknown Source)
+// Thread: Thread-47317
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.utils.lnf.b.run(SourceFile:100)
+// Thread: Finalizer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+// Thread: SyntheticaCleanerThread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.StyleFactory$ComponentPropertyStore$1.run(StyleFactory.java:1847)
+// Thread: AWT-EventQueue-1
+// 	at java.base@9.0.4/java.lang.invoke.MethodHandleNatives.resolve(Native Method)
+// 	at java.base@9.0.4/java.lang.invoke.MemberName$Factory.resolve(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.MemberName$Factory.resolveOrFail(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.MethodHandles$Lookup.resolveOrFail(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.MethodHandles$Lookup.linkMethodHandleConstant(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.MethodHandleNatives.linkMethodHandleConstant(Unknown Source)
+// 	at ui.utils.C.actionPerformed(SourceFile:73)
+// 	at java.desktop@9.0.4/javax.swing.Timer.fireActionPerformed(Unknown Source)
+// 	at ui.utils.B.fireActionPerformed(SourceFile:117)
+// 	at java.desktop@9.0.4/javax.swing.Timer$DoPostEvent.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.access$500(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEvent(Unknown Source)
+// 	at ui.frmwork.b.d.dispatchEvent(SourceFile:88)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.run(Unknown Source)
+// Thread: Thread-1
+// Thread: Process Messages
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.frmwork.d.h.construct(SourceFile:133)
+// 	at ui.frmwork.y.run(SourceFile:205)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: main
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.PlanAhead.b(SourceFile:1095)
+// 	at ui.PlanAhead.jswMain(SourceFile:1150)
+// Thread: Image Animator 3
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at java.desktop@9.0.4/sun.awt.image.GifFrame.dispose(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.GifImageDecoder.readImage(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.GifImageDecoder.produceImage(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.InputStreamImageSource.doFetch(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageFetcher.fetchloop(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageFetcher.run(Unknown Source)
+// Thread: RunnableQueue-0
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at org.apache.batik.util.RunnableQueue.run(RunnableQueue.java:222)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: RunnableQueue-2
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at org.apache.batik.util.RunnableQueue.run(RunnableQueue.java:222)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Thread-91734
+// Thread: Monitor File Timestamp Swing Worker
+// 	at java.base@9.0.4/jdk.internal.misc.Unsafe.defineAnonymousClass0(Native Method)
+// 	at java.base@9.0.4/jdk.internal.misc.Unsafe.defineAnonymousClass(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.InvokerBytecodeGenerator.loadAndInitializeInvokerClass(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.InvokerBytecodeGenerator.loadMethod(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.InvokerBytecodeGenerator.generateCustomizedCode(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.LambdaForm.compileToBytecode(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.LambdaForm.prepare(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.MethodHandle.<init>(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.BoundMethodHandle.<init>(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.BoundMethodHandle$Species_L.<init>(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.BoundMethodHandle$Species_L.copyWith(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.MethodHandles.dropArguments0(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.MethodHandles.dropArguments(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy.generate(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.StringConcatFactory.generate(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.StringConcatFactory.doStringConcat(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.StringConcatFactory.makeConcatWithConstants(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.LambdaForm$BMH/414984140.reinvoke(LambdaForm$BMH)
+// 	at java.base@9.0.4/java.lang.invoke.Invokers$Holder.invoke_MT(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.CallSite.makeSite(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.MethodHandleNatives.linkCallSiteImpl(Unknown Source)
+// 	at java.base@9.0.4/java.lang.invoke.MethodHandleNatives.linkCallSite(Unknown Source)
+// 	at ui.views.e.construct(SourceFile:228)
+// 	at ui.frmwork.y.run(SourceFile:205)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Batik CleanerThread
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at org.apache.batik.util.CleanerThread.run(CleanerThread.java:106)
+// Thread: Attach Listener
+// Thread: Timer-7
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.mainLoop(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.run(Unknown Source)
+// Thread: SyntheticaAnimation 25
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Monitor HEventQueue
+// 	at java.base@9.0.4/java.lang.Thread.dumpThreads(Native Method)
+// 	at java.base@9.0.4/java.lang.Thread.getAllStackTraces(Unknown Source)
+// 	at ui.utils.d.c.eAO(SourceFile:484)
+// 	at ui.frmwork.b.e.construct(SourceFile:140)
+// 	at ui.frmwork.y.run(SourceFile:205)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Update Runs Swing Worker
+// 	at ui.project.projecti.HAPRRunMgr_updateAllRuns(Native Method)
+// 	at ui.data.experiment.y.aKw(SourceFile:190)
+// 	at ui.data.experiment.A.construct(SourceFile:326)
+// 	at ui.frmwork.y.run(SourceFile:205)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: TimerQueue
+// 	at java.base@9.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@9.0.4/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.DelayQueue.take(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.TimerQueue.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// WARNING: HEventQueue.dispatchEvent() is taking  6902 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3219 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1310 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 653ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 12923ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12923 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 29607 ms. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1340 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 948ms to process. Increasing delay to 4000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 13769ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  13769 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12905 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 2006ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2015 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1643ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1889 ms.
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 6104ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6104 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 6422 ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1806ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1839 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1003ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1345 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1019ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1246 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1234ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1711 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1069ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1148 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1634ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2271 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1483ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1496 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1057ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1708 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 78913 ms. Increasing delay to 5000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 22014ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  22640 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6175 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1414ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1929 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1187ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1257 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1256ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1256 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1321ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1496 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1145 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1484ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1807 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 2129ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2341 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1470 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1620ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2048 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 9715ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9770 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1189 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1876 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 23614ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  23935 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1243 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1472ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2836 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 2403ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2409 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1557ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2331 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1507 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1143 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1631ms to process. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2362 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1773ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2480 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1937ms to process. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2512 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1840 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 8665ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9127 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1755 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1494ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2320 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1701ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2201 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1431ms to process. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1925 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  16540 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4333 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1833ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3013 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1917 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 136972 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 171431 ms. Increasing delay to 514293 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 27833ms to process. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  28407 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 2480ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2480 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1511ms to process. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1511 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1805ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2421 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1404ms to process. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1931 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1258 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1513 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1406 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3231 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1489 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1419ms to process. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1805 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1829ms to process. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1855 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  79893 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1346 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1830ms to process. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2461 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1274 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1721 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2885 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2716 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 3814ms to process. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4165 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1783 ms to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2825 ms to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2507 ms to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 3473 ms to process. Increasing delay to 7000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 238846ms to process. Increasing delay to 9000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  243184 ms.

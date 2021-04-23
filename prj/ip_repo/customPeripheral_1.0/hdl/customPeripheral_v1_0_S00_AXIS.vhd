@@ -39,6 +39,21 @@ end customPeripheral_v1_0_S00_AXIS;
 
 architecture arch_imp of customPeripheral_v1_0_S00_AXIS is
 
+
+
+  COMPONENT fifo_generator_0
+  PORT (
+    clk : IN STD_LOGIC;
+    din : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    wr_en : IN STD_LOGIC;
+    rd_en : IN STD_LOGIC;
+    dout : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    full : OUT STD_LOGIC;
+    empty : OUT STD_LOGIC;
+    data_count : OUT STD_LOGIC_VECTOR(12 DOWNTO 0)
+  );
+ END COMPONENT;
+ 
 	signal axis_tready	: std_logic;
 	
 	signal axis_tvalid : std_logic;
@@ -49,9 +64,11 @@ architecture arch_imp of customPeripheral_v1_0_S00_AXIS is
 	-- FIFO full flag
 	signal fifo_full_flag : std_logic;
 	
+
+	
 begin	
     
-  fifo0: entity work.fifo_generator_0
+  fifo0: fifo_generator_0
   port map (
     clk => S_AXIS_ACLK,
     din => S_AXIS_TDATA,
@@ -67,6 +84,9 @@ begin
   axis_tvalid <= S_AXIS_TVALID;
   axis_tready <= '0' when fifo_full_flag = '1' else
                   '1';
+  
+  S_AXIS_TREADY <= axis_tready;
+  axis_tvalid <= S_AXIS_TVALID;
   
     -- Add user logic here
 

@@ -72,6 +72,7 @@ architecture arch_imp of customPeripheral_v1_0 is
         gpo             : out std_logic_vector(3 downto 0);
         fifo_data       : in  std_logic_vector(31 downto 0);
         fifo_data_count : in  std_logic_vector(12 downto 0);
+        fifo_rd_en      : out std_logic;
 		S_AXI_ACLK	: in std_logic;
 		S_AXI_ARESETN	: in std_logic;
 		S_AXI_AWADDR	: in std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
@@ -132,6 +133,7 @@ customPeripheral_v1_0_S00_AXI_inst : customPeripheral_v1_0_S00_AXI
         gpo             => gpo,
         fifo_data       => fifo_data,
         fifo_data_count => fifo_data_count,
+        fifo_rd_en      => fifo_rd_en,
 		S_AXI_ACLK	=> s00_axi_aclk,
 		S_AXI_ARESETN	=> s00_axi_aresetn,
 		S_AXI_AWADDR	=> s00_axi_awaddr,
