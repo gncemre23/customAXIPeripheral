@@ -33,9 +33,11 @@ signal state_next, state_reg : state_type;
 signal start_next, start_new, start_old : std_logic;
 begin
 
-axi_t_sdata <= std_logic_vector(count_reg);
+axi_t_sdata(10 downto 0) <= std_logic_vector(count_reg);
+axi_t_sdata(31 downto 11) <= (others => '0');
 
 posedge_start <= start_new and (not start_old);
+start_next <= start;
 
 process(clk)
 begin
@@ -53,7 +55,8 @@ begin
     axi_t_valid <= '0';
     count_next <= count_reg;
     state_next <= state_reg;
-    start_next <= start;
+    axi_t_last <= '0';
+    
     if(rst_n = '0') then
         state_next <= INIT;
         count_next <= (others => '0');
@@ -65,9 +68,9 @@ begin
                     state_next <= BURST;
                 end if;
             when BURST =>
-                axi_t_valid <= '1';
                 if(axi_t_ready = '1') then
                     count_next <= count_reg + 1;
+                    axi_t_valid <= '1';
                     if(count_reg = to_unsigned(2046,11)) then 
                         state_next <= LAST;
                     end if;
