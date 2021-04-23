@@ -24,7 +24,7 @@ end stream_generator;
 
 architecture Behavioral of stream_generator is
 
-signal count_next, count_reg   : unsigned(10 downto 0);
+signal count_next, count_reg   : unsigned(31 downto 0);
 
 signal posedge_start : std_logic;
 
@@ -33,8 +33,7 @@ signal state_next, state_reg : state_type;
 signal start_next, start_new, start_old : std_logic;
 begin
 
-axi_t_sdata(10 downto 0) <= std_logic_vector(count_reg);
-axi_t_sdata(31 downto 11) <= (others => '0');
+axi_t_sdata <= std_logic_vector(count_reg);
 
 posedge_start <= start_new and (not start_old);
 start_next <= start;
@@ -71,7 +70,7 @@ begin
                 if(axi_t_ready = '1') then
                     count_next <= count_reg + 1;
                     axi_t_valid <= '1';
-                    if(count_reg = to_unsigned(2046,11)) then 
+                    if(count_reg = to_unsigned(2046,32)) then 
                         state_next <= LAST;
                     end if;
                 end if;
