@@ -21,6 +21,7 @@ entity customPeripheral_v1_0_S00_AXI is
         gpo             : out std_logic_vector(3 downto 0);
         fifo_data       : in  std_logic_vector(31 downto 0);
         fifo_data_count : in  std_logic_vector(12 downto 0);
+        fifo_rd_en      : out std_logic;
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -351,20 +352,25 @@ begin
 	-- and the slave is ready to accept the read address.
 	slv_reg_rden <= axi_arready and S_AXI_ARVALID and (not axi_rvalid) ;
 
-	process (slv_reg0, slv_reg1, slv_reg2, slv_reg3, axi_araddr, S_AXI_ARESETN, slv_reg_rden)
+	process (timer_out, gpi, fifo_data, slv_reg3, fifo_data_count, S_AXI_ARESETN, slv_reg_rden)
 	variable loc_addr :std_logic_vector(OPT_MEM_ADDR_BITS downto 0);
 	begin
+	    --default
+	    fifo_rd_en <= '0';
 	    -- Address decoding for reading registers
 	    loc_addr := axi_araddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
 	    case loc_addr is
 	      when b"00" =>
 	        reg_data_out <= timer_out;
 	      when b"01" =>
-	        reg_data_out <= gpi;
+	        reg_data_out(3 downto 0) <= gpi;
+	        reg_data_out(31 downto 4) <= (others => '0');
 	      when b"10" =>
 	        reg_data_out <= fifo_data;
+	        fifo_rd_en  <= '1';
 	      when b"11" =>
-	        reg_data_out <= fifo_data_count;
+	        reg_data_out(12 downto 0) <= fifo_data_count;
+	        reg_data_out(31 downto 13) <= (others => '0');
 	      when others =>
 	        reg_data_out  <= (others => '0');
 	    end case;
@@ -390,7 +396,7 @@ begin
 
 
 	-- Add user logic here
-    gpo <= slv_reg1;
+    gpo <= slv_reg1(3 downto 0);
     
     timer0 : entity work.timer
     port map(
