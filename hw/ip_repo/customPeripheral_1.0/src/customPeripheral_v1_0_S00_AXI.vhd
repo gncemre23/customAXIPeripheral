@@ -359,8 +359,6 @@ begin
 	process (timer_out, gpi, fifo_data, slv_reg3, fifo_data_count, S_AXI_ARESETN, slv_reg_rden)
 	variable loc_addr :std_logic_vector(OPT_MEM_ADDR_BITS downto 0);
 	begin
-	    --default
-	    fifo_rd_en <= '0';
 	    -- Address decoding for reading registers
 	    loc_addr := axi_araddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
 	    case loc_addr is
@@ -386,7 +384,6 @@ begin
 	  if (rising_edge (S_AXI_ACLK)) then
 	    if ( S_AXI_ARESETN = '0' ) then
 	      axi_rdata  <= (others => '0');
-	      fifo_rd_en <= '0';
 	    else
 	      if (slv_reg_rden = '1') then
 	        -- When there is a valid read address (S_AXI_ARVALID) with 
@@ -394,8 +391,6 @@ begin
 	        -- output the read dada 
 	        -- Read address mux
 	          axi_rdata <= reg_data_out;     -- register read data
-	          
-	          end if;
 	      end if;   
 	    end if;
 	  end if;
